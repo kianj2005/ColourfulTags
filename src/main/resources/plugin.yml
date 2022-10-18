@@ -1,0 +1,7 @@
+name: Colourfultags
+version: '1.0'
+main: me.therifty.colourfultags.Colourfultags
+api-version: 1.18
+prefix: Colourful Tags
+depend: [ Vault ]
+authors: [ TheRifty ]

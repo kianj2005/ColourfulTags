@@ -12,8 +12,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 @Setter
 public final class Colourfultags extends JavaPlugin implements Listener {
 
-    public static Colourfultags instance;
-
     private static Chat chat = null;
 
     public AddTags addTags;
@@ -40,7 +38,4 @@ public final class Colourfultags extends JavaPlugin implements Listener {
         return chat;
     }
 
-    public static Colourfultags GetInstance() {
-        return instance;
-    }
 }

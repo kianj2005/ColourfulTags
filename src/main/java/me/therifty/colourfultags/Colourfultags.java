@@ -14,13 +14,13 @@ public final class Colourfultags extends JavaPlugin {
 
     private static Chat chat = null;
 
-    public static AddTags addTags;
+    public AddTags addTags;
 
     @Override
     public void onEnable() {
         // Plugin startup logic
         setupChat();
-        addTags = new AddTags(this);
+        addTags = new AddTags();
 
     }
 
@@ -37,7 +37,7 @@ public final class Colourfultags extends JavaPlugin {
     public static Chat getChat() {
         return chat;
     }
-    public static AddTags getAddTags() {
+    public AddTags getAddTags() {
         return addTags;
     }
 

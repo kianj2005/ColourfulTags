@@ -6,18 +6,16 @@ import org.bukkit.entity.Player;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import static me.therifty.colourfultags.Colourfultags.getChat;
 import static org.bukkit.ChatColor.COLOR_CHAR;
 
 public class AddTags {
 
-    Colourfultags plugin;
-    public AddTags(Colourfultags plugin) {
-        this.plugin = plugin;
-    }
+
 
 
     public void addTagToPlayer(Player player, String tagName, String hexCode) {
-        plugin.getChat().setPlayerSuffix(player, translateHexColorCodes(tagName, hexCode));
+        getChat().setPlayerSuffix(player, translateHexColorCodes(tagName, hexCode));
     }
 
     public String translateHexColorCodes(String message, String hexCode)

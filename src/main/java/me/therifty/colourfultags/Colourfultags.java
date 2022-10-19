@@ -10,7 +10,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 @Getter
 @Setter
-public final class Colourfultags extends JavaPlugin implements Listener {
+public final class Colourfultags extends JavaPlugin {
 
     private static Chat chat = null;
 

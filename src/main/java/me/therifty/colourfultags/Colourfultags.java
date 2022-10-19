@@ -4,12 +4,13 @@ import lombok.Getter;
 import lombok.Setter;
 import me.therifty.colourfultags.AddTags.AddTags;
 import net.milkbowl.vault.chat.Chat;
+import org.bukkit.event.Listener;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 
 @Getter
 @Setter
-public final class Colourfultags extends JavaPlugin {
+public final class Colourfultags extends JavaPlugin implements Listener {
 
     public static Colourfultags instance;
 
@@ -20,10 +21,8 @@ public final class Colourfultags extends JavaPlugin {
     @Override
     public void onEnable() {
         // Plugin startup logic
-        instance = this;
-        addTags = new AddTags(this);
-
         setupChat();
+        addTags = new AddTags(this);
 
     }
 

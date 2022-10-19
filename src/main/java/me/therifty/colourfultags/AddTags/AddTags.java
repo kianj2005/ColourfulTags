@@ -9,8 +9,8 @@ import java.util.regex.Pattern;
 import static org.bukkit.ChatColor.COLOR_CHAR;
 
 public class AddTags {
-    private final Colourfultags plugin;
 
+    Colourfultags plugin;
     public AddTags(Colourfultags plugin) {
         this.plugin = plugin;
     }

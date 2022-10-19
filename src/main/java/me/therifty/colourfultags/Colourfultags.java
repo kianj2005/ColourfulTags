@@ -14,7 +14,7 @@ public final class Colourfultags extends JavaPlugin {
 
     private static Chat chat = null;
 
-    public AddTags addTags;
+    public static AddTags addTags;
 
     @Override
     public void onEnable() {
@@ -36,6 +36,9 @@ public final class Colourfultags extends JavaPlugin {
     }
     public static Chat getChat() {
         return chat;
+    }
+    public static AddTags getAddTags() {
+        return addTags;
     }
 
 }

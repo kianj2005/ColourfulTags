@@ -40,4 +40,8 @@ public final class Colourfultags extends JavaPlugin {
     public static Chat getChat() {
         return chat;
     }
+
+    public static Colourfultags GetInstance() {
+        return instance;
+    }
 }
